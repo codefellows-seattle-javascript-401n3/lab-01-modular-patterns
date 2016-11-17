@@ -10,6 +10,7 @@ describe('app should say hello and give the provided name', function (){
   });
 });
 
+// bonus points below
 describe('process.argv array', function() {
   describe('argv', function(){
     it('will pass in the name given on the command line to process.argv', function() {
