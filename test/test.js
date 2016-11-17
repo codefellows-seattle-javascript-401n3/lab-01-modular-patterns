@@ -6,5 +6,8 @@ describe('Greet Module', function() {
     it('returns Hello Jessica', function() {
       assert.strictEqual('Hello Jessica', greet('Jessica'));
     });
+    it('only works for strings', function() {
+      assert.strictEqual('Please enter a string', greet(9));
+    });
   });
 });
