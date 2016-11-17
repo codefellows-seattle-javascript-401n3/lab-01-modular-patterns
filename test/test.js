@@ -1,5 +1,5 @@
 var assert = require('assert');
-var greet = require('../lib/greet.js');
+var greet = require('../greet.js');
 
 describe('Greet Module', function() {
   describe('#greet()', function() {
