@@ -6,7 +6,6 @@ function greet(name) {
   }
 }
 
-var test = greet(process.argv[2]);
-console.log(test);
+console.log(greet(process.argv[2]));
 
 module.exports = greet;
