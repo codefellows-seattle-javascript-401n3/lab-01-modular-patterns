@@ -1,0 +1,19 @@
+{
+  "name": "lab-dan",
+  "version": "1.0.0",
+  "description": "lab 1",
+  "main": "app.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha",
+    "hello": "node app.js Test"
+  },
+  "author": "Dan Peters",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.1.2"
+  }
+}
