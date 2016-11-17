@@ -1,3 +1,4 @@
 var greet = require('./greet.js');
 
-greet.greet('someName')
+var greeting = greet.greet('someName');
+console.log(greeting);
