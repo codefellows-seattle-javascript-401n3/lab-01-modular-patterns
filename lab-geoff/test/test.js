@@ -1,4 +1,4 @@
-const assert = require('assert');
+var assert = require('assert');
 var index = require('../index.js');
 console.log(index); //empty object right now
 
