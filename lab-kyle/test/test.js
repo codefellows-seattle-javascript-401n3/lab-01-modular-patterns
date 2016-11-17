@@ -1,6 +1,5 @@
 const assert = require('assert');
 const name = require('../lib/greet');
-var result;
 
 describe('a greet module', function() {
   describe('greeting()', function() {
@@ -14,6 +13,13 @@ describe('a greet module', function() {
     it('returns a value with length greater than 0', function() {
       let result = name.greeting(name).length;
       assert.equal(result > 0, true);
+    });
+  });
+  describe('end to end tests', function() {
+    it('can hanlde command line args', function() {
+      process.argv[2] = 'Kyle';
+      let result = name.greeting(process.argv[2]);
+      assert.equal(result, 'hello Kyle');
     });
   });
 });
