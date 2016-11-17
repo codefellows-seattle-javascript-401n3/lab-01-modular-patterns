@@ -1,0 +1,14 @@
+{
+  "name": "lab-trent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "greet.js",
+  "scripts": {
+    "test": "mocha test"
+  },
+  "author": "Trenton Kress",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.1.2"
+  }
+}
