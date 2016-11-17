@@ -1,4 +1,4 @@
-const name = require('./lib/name');
+const greet = require('./lib/greet');
 
-const greeting = name.greet('Kyle');
+const greeting = greet.greeting('Kyle');
 console.log(greeting);

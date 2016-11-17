@@ -1,7 +1,7 @@
-function greet(name) {
+function greeting(name) {
   return 'hello ' + name;
 }
 
 module.exports = {
-  greet: greet,
+  greeting: greeting,
 };
