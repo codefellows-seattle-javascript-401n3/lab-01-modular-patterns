@@ -4,7 +4,7 @@
   "description": "![CF](assets/shield-32x32.png) Lab 01: Modular Patterns and Testing ===",
   "main": "hello.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
   },
   "repository": {
     "type": "git",
