@@ -11,7 +11,7 @@ describe('Greet', function() {
     });
     it('should greet the user by the username passed as a process argument', function() {
       process.argv[2] = 'ricky';
-      assert.equal(greet(), 'hello ricky');
+      assert.equal(greet(process.argv[2]), 'hello ricky');
     });
   });
 });
