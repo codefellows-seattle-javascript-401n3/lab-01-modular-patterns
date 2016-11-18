@@ -1,7 +1,7 @@
 {
   "name": "lab-01-modular-patterns",
   "version": "1.0.0",
-  "description": "![CF](assets/shield-32x32.png) Lab 01: Modular Patterns and Testing ===",
+  "description": "Code Fellows 401 - Lab 01: Modular Patterns and Testing",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/kdwinck/lab-01-modular-patterns.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["baller", "best", "amazeballs"],
+  "author": "Kyle Winckler",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/kdwinck/lab-01-modular-patterns/issues"
