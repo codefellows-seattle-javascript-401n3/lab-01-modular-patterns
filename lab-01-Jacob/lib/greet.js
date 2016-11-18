@@ -5,6 +5,4 @@ var myObj = {
   },
 };
 
-myObj.greet(process.argv[2]); //gimme thems bonus points!
-
 module.exports = myObj;
