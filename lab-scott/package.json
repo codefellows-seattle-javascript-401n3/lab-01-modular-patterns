@@ -1,0 +1,17 @@
+{
+  "name": "lab-scott",
+  "version": "1.0.0",
+  "description": "Lab 01 module patter assignment",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Scott Schmidt",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.1.2"
+  }
+}
