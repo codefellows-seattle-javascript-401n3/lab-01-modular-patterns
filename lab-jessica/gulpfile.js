@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var eslint = require('gulp-eslint');
+var mocha = require('gulp-mocha');
 
 gulp.task('lint', function(){
   return gulp.src(['**/*.js','!node_modules/**'])
@@ -8,9 +9,11 @@ gulp.task('lint', function(){
   .pipe(eslint.failAfterError());
 });
 
-
 gulp.task('mocha', function() {
-  //code
+  return gulp.src('./test/*.js')
+    .pipe(mocha({
+      reporter: 'nyan',
+    }));
 });
 
 gulp.task('watch', function() {
