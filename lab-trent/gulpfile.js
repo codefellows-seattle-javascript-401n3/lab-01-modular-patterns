@@ -15,3 +15,11 @@ gulp.task('test', function() {
   gulp.src('./test/*.js', { read: false })
   .pipe(mocha());
 });
+
+gulp.task('dev', function() {
+  gulp.watch(['**/*.js', '!node_modules/**'], ['lint', 'test']);
+});
+
+gulp.task('default', ['dev'], function() {
+  console.log('Test and lint successful.');
+});
