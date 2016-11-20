@@ -14,11 +14,15 @@ gulp.task('tester', function() {
 });
 
 gulp.task('linter', function() {
-  gulp.src('/**/*.js')
+  gulp.src('./**/*.js')
   .pipe(eslint());
+});
+
+gulp.task('dev', function() {
+  gulp.watch('./**/*.js', ['tester', 'linter']);  
 });
 
 // gulp.task('default', function() {
 //   console.log('Process is run by default');
 // });
-gulp.task('default', ['welcome', 'tester', 'linter']);
+gulp.task('default', ['welcome', 'dev']);
