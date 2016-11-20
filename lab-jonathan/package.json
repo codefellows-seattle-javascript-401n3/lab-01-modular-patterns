@@ -1,0 +1,17 @@
+{
+  "name": "lab-jonathan",
+  "version": "1.0.0",
+  "description": "lab01 project for modular patterns",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "jonathan d",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^3.1.2"
+  }
+}
