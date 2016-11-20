@@ -1,4 +1,4 @@
-var verify = require('./lib/greet.js');
+var verify = require('../lib/greet.js');
 var assert = require('assert');
 
 
@@ -19,6 +19,6 @@ describe('process.argv array', function() {
     it('will pass in the name given on the command line to process.argv', function() {
       process.argv[1] = 'dave';
       assert('greet', verify('dave'));
-    });
+    })
   });
 });

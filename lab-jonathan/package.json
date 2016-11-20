@@ -12,6 +12,8 @@
   "author": "jonathan d",
   "license": "ISC",
   "devDependencies": {
-    "mocha": "^3.1.2"
+    "gulp-eslint": "^3.0.1",
+    "mocha": "^3.1.2",
+    "sillyname": "^0.1.0"
   }
 }
