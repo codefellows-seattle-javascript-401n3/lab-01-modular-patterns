@@ -1,6 +1,6 @@
-var gulp = require('gulp');
-var eslint = require('gulp-eslint');
-var mocha = require('gulp-mocha');
+const gulp = require('gulp');
+const eslint = require('gulp-eslint');
+const mocha = require('gulp-mocha');
 
 gulp.task('lint', function(){
   return gulp.src(['**/*.js','!node_modules/**'])
