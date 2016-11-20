@@ -1,16 +1,16 @@
 {
   "name": "lab-ron-dunphy",
   "version": "1.0.0",
-  "description": "",
+  "description": "lab 01",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ron Dunphy",
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.5.0",
