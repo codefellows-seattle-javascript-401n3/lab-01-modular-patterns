@@ -9,6 +9,15 @@ gulp.task('mocha', function() {
 });
 
 gulp.task('eslint', function(){
-  return gulp.src('*/*.js')
-  .pipe(eslint());
+  return gulp.src(['**/*.js', '!node_modules/**'])
+  .pipe(eslint())
+  .pipe(eslint.format())
+  .pipe(eslint.failAfterError());
 });
+
+gulp.task('dev', function(){
+  gulp.watch('**/*.js', ['mocha', 'eslint']);
+});
+
+
+gulp.task('default', ['dev']);

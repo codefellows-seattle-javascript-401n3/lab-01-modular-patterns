@@ -1,4 +1,4 @@
-var greet = require('../lib/greet.js').greet;
+var greet = require('../lib/greet.js');
 var assert = require('assert');
 
 
