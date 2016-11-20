@@ -20,6 +20,4 @@ gulp.task('watch', function() {
   gulp.watch(['**/*.js', '!node_modules/**'], ['lint', 'mocha']);
 });
 
-gulp.task('favorite', function() {
-  //favorite task
-});
+gulp.task('default', ['watch']);
