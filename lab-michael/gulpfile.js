@@ -5,7 +5,6 @@ const mocha = require('gulp-mocha');
 
 gulp.task('welcome', function() {
   console.log('Welcome and Good Day');
-  // gulp.src('/**/*.js');
 });
 
 gulp.task('tester', function() {
@@ -19,10 +18,7 @@ gulp.task('linter', function() {
 });
 
 gulp.task('dev', function() {
-  gulp.watch('./**/*.js', ['tester', 'linter']);  
+  gulp.watch('./**/*.js', ['tester', 'linter']);
 });
 
-// gulp.task('default', function() {
-//   console.log('Process is run by default');
-// });
 gulp.task('default', ['welcome', 'dev']);
