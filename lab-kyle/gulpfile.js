@@ -12,3 +12,10 @@ gulp.task('test', function() {
   gulp.src('./test/test.js', {read: false})
   .pipe(mocha({reporter: 'nyan'}))
 })
+
+gulp.task('eslint', function() {
+  return gulp.src(['**/*.js', '!node_modules/**'])
+  .pipe(eslint())
+  .pipe(eslint.format())
+  .pipe(eslint.failAfterError())
+})
