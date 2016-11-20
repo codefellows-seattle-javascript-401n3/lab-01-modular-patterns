@@ -1,5 +1,7 @@
+'use strict';
+
 const assert = require('assert');
-const greet = require('../greet');
+const greet = require('../lib/greet');
 
 describe('Greet', function() {
   describe('greet()', function() {
