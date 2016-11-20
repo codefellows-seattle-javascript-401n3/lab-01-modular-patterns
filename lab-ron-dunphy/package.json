@@ -4,10 +4,11 @@
   "description": "lab 01",
   "main": "index.js",
   "directories": {
-    "test": "test"
+    "test": "test",
+    "test": "gulp",
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha; gulp",
   },
   "keywords": [],
   "author": "Ron Dunphy",
