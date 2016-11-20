@@ -1,6 +1,7 @@
 'use strict';
 
 const gulp = require('gulp');
+const mocha = require('gulp-mocha');
 const eslint = require('gulp-eslint');
 
 gulp.task('lint', function() {
@@ -8,4 +9,9 @@ gulp.task('lint', function() {
   .pipe(eslint())
   .pipe(eslint.format())
   .pipe(eslint.failAfterError());
+});
+
+gulp.task('test', function() {
+  gulp.src('./test/*.js', { read: false })
+  .pipe(mocha());
 });
