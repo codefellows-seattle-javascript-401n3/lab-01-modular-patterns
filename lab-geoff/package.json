@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/geoffreycc/lab-01-modular-patterns#readme",
   "devDependencies": {
+    "gulp": "^3.9.1",
     "mocha": "^3.1.2"
   }
 }
