@@ -17,7 +17,7 @@ gulp.task('mocha', function() {
 });
 
 gulp.task('watch', function() {
-  //code
+  gulp.watch(['**/*.js', '!node_modules/**'], ['lint', 'mocha']);
 });
 
 gulp.task('favorite', function() {
