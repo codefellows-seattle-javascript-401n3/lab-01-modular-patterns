@@ -3,6 +3,8 @@
 'use strict'
 
 let gulp = require('gulp');
+let mocha = require('./node_modules/gulp-mocha');
+let eslint = require('./node_modules/gulp-eslint')
 
 //npm run useGulp
 gulp.task('default', function() {
@@ -16,10 +18,7 @@ gulp.task('lint', function() {
 
 //npm run gulpTest
 gulp.task('mocha', function() {
-  console.log('npm test') // need some way to call mocha -> might be nice to only run on specified files
-  // process.argv[1] = 'npm test' //doesn't do anything (i think)
-  let source = gulp.src('./*.js');
-  console.log(source)
+  gulp.src('./test/*').pipe(mocha());
 });
 
 //npm run gulpWatch
