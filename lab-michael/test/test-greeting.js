@@ -1,9 +1,11 @@
-var greet = require('../greeting.js');
+var greet = require('../lib/greeting.js');
 var assert = require('assert');
 
-describe('A greeting', function() {
-  it('will greet user by name', function() {
-    var name = 'bob';
-    assert.equal(greet.greet(name), 'hello ' + name);
+describe('func', function() {
+  describe('A greeting', function() {
+    it('will greet user by name', function() {
+      var name = 'mike';
+      assert.equal(greet(name), `hello ${name}`);
+    });
   });
 });
