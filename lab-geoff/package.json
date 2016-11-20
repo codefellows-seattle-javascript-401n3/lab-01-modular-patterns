@@ -4,7 +4,8 @@
   "description": "lab-01-assignment",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "useGulp": "gulp"
   },
   "repository": {
     "type": "git",
