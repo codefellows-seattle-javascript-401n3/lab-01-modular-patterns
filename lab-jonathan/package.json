@@ -1,0 +1,19 @@
+{
+  "name": "lab-jonathan",
+  "version": "1.0.0",
+  "description": "lab01 project for modular patterns",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "jonathan d",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp-eslint": "^3.0.1",
+    "mocha": "^3.1.2",
+    "sillyname": "^0.1.0"
+  }
+}
