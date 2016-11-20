@@ -13,7 +13,7 @@ gulp.task('eslintrc', function() {
 });
 
 gulp.task('test', function(){
-  gulp.src('../test/*-test.js')
+  return gulp.src('./test/*-test.js')
   .pipe(mocha({reporter: 'list'}));
 });
 

@@ -1,4 +1,4 @@
-var verify = require('./lib/greet.js');
+var verify = require('../lib/greet.js');
 var assert = require('assert');
 
 
