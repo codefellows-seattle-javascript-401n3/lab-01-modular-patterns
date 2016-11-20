@@ -26,6 +26,7 @@ gulp.task('watch', function() {
   console.log('Watch files. Run the lint and test tasks');
   let watchedFiles = gulp.watch('./*.js', ['lint', 'mocha']);
   watchedFiles.on('change', function(e) {
-    console.log('some change happened')
+    console.log('some change happened');
+    console.log(e);
   })
 });
