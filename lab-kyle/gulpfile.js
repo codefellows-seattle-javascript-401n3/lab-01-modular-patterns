@@ -19,3 +19,9 @@ gulp.task('eslint', function() {
   .pipe(eslint.format())
   .pipe(eslint.failAfterError())
 })
+
+gulp.task('dev', function() {
+  gulp.watch(['**/*.js', '!node_modules/**'], ['test', 'eslint'])
+})
+
+gulp.task('default', ['dev'])
