@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha",
-    "useGulp": "gulp"
+    "useGulp": "gulp",
+    "gulpLint": "gulp lint",
+    "gulpTest": "gulp mocha",
+    "gulpWatch": "gulp watch"
   },
   "repository": {
     "type": "git",

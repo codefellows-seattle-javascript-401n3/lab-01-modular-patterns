@@ -1,3 +1,5 @@
+// Directions:
+// include the class eslint
 'use strict'
 
 let gulp = require('gulp');
@@ -6,15 +8,16 @@ gulp.task('default', function() {
   console.log('gulp default task')
 });
 
+// gulp.src('**/*.js').pipe()
 
+gulp.task('lint', function() {
+  console.log('run eslint')
+});
 
-// Directions:
-//
-// add your own .gitignore
-// include the class eslint
+gulp.task('mocha', function() {
+  console.log('run mocha')
+});
 
-// Gulp Tasks
-// make a lint task for running eslint
-// make a test task for running mocha
-// make a dev task that watches your files and runs the lint and test tasks
-// make a default task that runs your favorite task
+gulp.task('watch', function() {
+  console.log('Watch files. Run the lint and test tasks')
+});
