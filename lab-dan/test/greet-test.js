@@ -1,5 +1,7 @@
-var expect = require('chai').expect;
-var greet = require('../lib/greet');
+'use strict';
+
+const expect = require('chai').expect;
+const greet = require('../lib/greet');
 
 describe('Name Library', function () {
   describe('Greeting Function', function () {

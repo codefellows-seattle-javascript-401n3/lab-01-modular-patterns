@@ -1,6 +1,8 @@
-var expect = require('chai').expect;
+'strict mode';
+
+const expect = require('chai').expect;
 process.argv[2] = 'Test';
-var app = require('../app.js');
+const app = require('../app.js');
 
 describe('This is my App run from the command line', function () {
   describe('Greet Function', function () {
