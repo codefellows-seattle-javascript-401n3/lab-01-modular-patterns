@@ -2,5 +2,6 @@
 
 
 exports.greet = function greet(name) {
-  return 'my name is ' + name;
+  if (!name) throw ReferenceError('Must provide name!');
+  return `my name is ${name}`;
 };
