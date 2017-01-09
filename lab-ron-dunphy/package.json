@@ -4,11 +4,11 @@
   "description": "lab 01",
   "main": "index.js",
   "directories": {
-    "test": "test",
+    "test": "test"
   },
   "scripts": {
     "test": "mocha",
-    "gulp": "gulp",
+    "gulp": "gulp"
   },
   "keywords": [],
   "author": "Ron Dunphy",
@@ -16,5 +16,9 @@
   "devDependencies": {
     "mocha": "^3.1.2",
     "gulp": "^3.9.1"
+  },
+  "dependencies": {
+    "gulp-eslint": "^3.0.1",
+    "gulp-mocha": "^3.0.1"
   }
 }
