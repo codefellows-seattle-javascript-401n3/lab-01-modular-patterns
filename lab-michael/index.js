@@ -1,5 +1,5 @@
-var greet = require('./lib/greeting');
+const greet = require('./lib/greeting');
 
-var intro = greet('Michael');
+let intro = greet('Michael');
 
 console.log(intro);

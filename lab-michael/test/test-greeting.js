@@ -1,5 +1,5 @@
-var greet = require('../lib/greeting.js');
-var assert = require('assert');
+const greet = require('../lib/greeting.js');
+const assert = require('assert');
 
 describe('Greet Function', function() {
   describe('A greeting', function() {
