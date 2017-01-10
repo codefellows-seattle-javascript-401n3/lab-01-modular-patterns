@@ -1,5 +1,5 @@
-var objTest = require('./lib/greeting');
+var greet = require('./lib/greeting');
 
-objTest();
+var intro = greet('Michael');
 
-console.log(objTest);
+console.log(intro);

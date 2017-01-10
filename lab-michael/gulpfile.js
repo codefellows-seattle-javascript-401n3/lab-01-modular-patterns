@@ -1,24 +1,32 @@
+'use strict';
+
 const gulp = require('gulp');
 const eslint = require('gulp-eslint');
 const mocha = require('gulp-mocha');
 
-
-gulp.task('welcome', function() {
-  console.log('Welcome and Good Day');
+gulp.task('test-gulp', function() {
+  console.log('successful test');
 });
 
-gulp.task('tester', function() {
-  gulp.src('./test/test-*.js')
-  .pipe(mocha());
+gulp.task('test', function() {
+  gulp.src('./test/test-*.js', {read: false})
+  .pipe(mocha({reporter: 'nyan'}));
 });
 
-gulp.task('linter', function() {
-  gulp.src('./**/*.js')
-  .pipe(eslint());
+gulp.task('eslint', function() {
+  return gulp.src(['**/*.js', '!node_modules/**'])
+  .pipe(eslint())
+  .pipe(eslint.format())
+  .pipe(eslint.failAfterError());
 });
 
 gulp.task('dev', function() {
-  gulp.watch('./**/*.js', ['tester', 'linter']);
+  gulp.watch(['**/*.js', '!node_modules/**'], ['test', 'eslint']);
 });
 
-gulp.task('default', ['welcome', 'dev']);
+gulp.task('default', ['dev']);
+
+
+
+
+
