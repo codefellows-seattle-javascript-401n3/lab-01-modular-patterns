@@ -5,16 +5,16 @@
   "main": "index.js",
   "directories": {
     "test": "test",
-    "test": "gulp",
   },
   "scripts": {
-    "test": "mocha; gulp",
+    "test": "mocha",
+    "gulp": "gulp",
   },
   "keywords": [],
   "author": "Ron Dunphy",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^3.5.0",
-    "mocha": "^3.1.2"
+    "mocha": "^3.1.2",
+    "gulp": "^3.9.1"
   }
 }
