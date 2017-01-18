@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Lab02",
   "main": "index.js",
-  "dependencies": {
-    "chai": "^3.5.0"
-  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-eslint": "^3.0.1",
@@ -13,7 +10,7 @@
     "mocha": "^3.1.2"
   },
   "scripts": {
-    "test": "mocha",
+    "test": "gulp",
     "hello": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
